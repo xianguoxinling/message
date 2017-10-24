@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean name="/bespeak/create.action" class="com.control.beapeak.CreateBespeakController"></bean>
+    <bean name="/bespeak/noshop.action" class="com.control.beapeak.NoShopBespeakController"></bean>
+    <bean name="/bespeak/tostore.action" class="com.control.beapeak.ToStoreBespeakController"></bean>
+    <bean name="/bespeak/queryall.action" class="com.control.beapeak.QueryAllBespeakController"></bean>
+    <bean name="/bespeak/querynew.action" class="com.control.beapeak.QueryNewBespeakController"></bean>
+    <bean name="/bespeak/querynoshop.action" class="com.control.beapeak.QueryNoShopBespeakController"></bean>
+    <bean name="/bespeak/querytostore.action" class="com.control.beapeak.QueryToTheStoreController"></bean>
+    
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="200000000000" />
+	</bean>	
+</beans>
